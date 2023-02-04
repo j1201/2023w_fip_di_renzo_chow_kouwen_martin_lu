@@ -1,0 +1,38 @@
+#preloader {
+    background-color: rgb(218, 186, 186);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 110;
+    
+    p {
+        top: 50%;
+        position: relative;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+#spin {
+    color:red;
+    
+
+    &:after {
+        content:"";
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { content: "We"; }
+        10% { content: "Respect"; }
+        20% { content: "Respect"; }
+        30% { content: "Kindness"; }
+        40% { content: "I"; }
+        50% { content: "Discipline"; }
+        60% { content: "Love"; }
+        70% { content: "You"; }
+        80% { content: "Friendship"; }
+        90% { content: "Respect"; }
+      }
+  }
+
