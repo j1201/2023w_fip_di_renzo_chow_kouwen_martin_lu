@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="app">
+    <!-- Page preloader -->
+    <div id="preloader" v-if="showLoader">
+        <p><span id="spin"></span> can win this match.</p>
+    </div>
+
+    <!-- Verticle navbar -->
+    <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i> 
+
+    <div class="sidebar" v-if="sideBar">
+        <div class="nav-content">
+            <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+      
+
+    <!-- The story section -->
+    <div>
+        <div class="video-container">
+            <video controls class="video" poster="https://via.placeholder.com/1920x1080?text=Video" >
+                <source src="#" type="video/webm">
+                <source src="#" type="video/mp4">
+            </video>
+        </div>
+        <div class="story-text" href="#showMenu">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?</p>
+        </div>
+    </div>
+    
+    
+    
+    
+</main>
+
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://kit.fontawesome.com/07199f6f37.js" crossorigin="anonymous"></script>
+<script src="js/main.js" type="module" defer></script>
+</html>
