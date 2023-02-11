@@ -8,44 +8,77 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 class="hidden"></h1>
     <main id="app">
-    <!-- Page preloader -->
-    <div id="preloader" v-if="showLoader">
-        <p><span id="spin"></span> can win this match.</p>
-    </div>
-
-    <!-- Verticle navbar -->
-    <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i> 
-
-    <div class="sidebar" v-if="sideBar">
-        <div class="nav-content">
-            <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            </ul>
+        <!-- Page preloader -->
+        <div id="preloader" v-if="showLoader">
+            <p><span id="spin"></span> can win this match.</p>
         </div>
-    </div>
-      
 
-    <!-- The story section -->
-    <div>
+        <!-- Verticle navbar -->
+        <header>
+            <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i>
+            <div class="sidebar" v-if="sideBar">
+                <h2 class="hidden"></h2>
+                <div class="nav-content">
+                    <img src="/images/placeholder.png" alt="">
+                    <ul>
+                        <li><a href="#">Manifesto</a></li>
+                        <li><a href="#">Campagins</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="heroSec">
+            <h2 class="hidden"></h2>
+        </section>
+
         <div class="video-container">
+            <h2></h2>
             <video controls class="video" poster="https://via.placeholder.com/1920x1080?text=Video" >
                 <source src="#" type="video/webm">
                 <source src="#" type="video/mp4">
             </video>
         </div>
-        <div class="story-text" href="#showMenu">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?</p>
+       
+        <!-- The story section -->
+        <div id="storySec">
+            <div id="storySecMain">
+                <h2 class="hidden"></h2>
+                <div class="story-text" href="#showMenu">
+                    <h3>Manifesto</h3>
+                    <div class="manoItem">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h4>
+                        <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                        <p>Read More</p>
+                    </div>
+                    <div class="manoItem">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h4>
+                        <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                        <p>Read More</p>
+                    </div>
+                    <div class="manoItem">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h4>
+                        <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                        <p>Read More</p>
+                    </div>
+                    <div id="manoStat">
+                        <div class="statBlock">
+                            <h4>Two In Ten</h4>
+                            <p>households have a child that plays hockey across the country</p>
+                        </div>
+                        <div class="statBlock">
+                            <h4>Two In Ten</h4>
+                            <p>households have a child that plays hockey across the country</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    
-    
-    
-</main>
-
+    </main>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://kit.fontawesome.com/07199f6f37.js" crossorigin="anonymous"></script>
