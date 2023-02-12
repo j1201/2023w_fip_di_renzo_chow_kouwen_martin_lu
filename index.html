@@ -17,7 +17,9 @@
 
         <!-- Verticle navbar -->
         <header>
-            <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i>
+            <div class="ham-menu">
+                <i class="fas fa-bars" @click="showMobileMenu()"></i>
+            </div>
             <div class="sidebar" v-if="sideBar">
                 <h2 class="hidden"></h2>
                 <div class="nav-content">
@@ -32,7 +34,7 @@
         </header>
 
         <!-- Hero Section -->
-        <section id="heroSec">
+        <section id="heroSec" class="hidden">
             <h2 class="hidden"></h2>
         </section>
 
@@ -45,7 +47,7 @@
         </div>
        
         <!-- The story section -->
-        <div id="storySec">
+        <div id="storySec" class="hidden">
             <div id="storySecMain">
                 <h2 class="hidden"></h2>
                 <div class="story-text" href="#showMenu">
