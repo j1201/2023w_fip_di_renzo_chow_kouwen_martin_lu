@@ -85,7 +85,7 @@
     }    
 
     @include desktop {
-        height: 3000px;
+        height: 1500px;
         margin-top: 5em;
         margin-left: 18vw;
         
@@ -94,56 +94,25 @@
     
             .story-text {
                 h3 {
-                    font-family: 'BienBold', sans-serif;
-                    text-transform: uppercase;
                     font-size: 4em;
-                    color: $main-grey;
-                    background-color: $main-black;
                     padding:30px 50px;
                 }
     
                 .manoItem {
                     padding:50px 50px;
-                    font-family: 'BienMed', sans-serif;
-                    border-bottom: 1px black solid;
                     h4 {
                         font-size: 1.4em;
-                        line-height: 1.2em;
                     }
                     .manoExt {
                         font-size: 1.2em;
-                        display: block;
-                        margin-top: 0.5em;
-                        margin-bottom: 1em;
-                        line-height: 1.2em;
-                        display: none;
-                    }
-    
-                    p {
-                        font-family: 'BienBold', sans-serif;
-                        text-align: right;
-                        margin-top: 20px;
                     }
                 }
     
                 #manoStat {
                     display: flex;
-                    margin-top: 80px;
-                    justify-content: space-between;
     
                     .statBlock {
-                        color: $main-grey;
-                        background-color: $second-blue;
                         width: 48%;
-                        padding: 1.5em;
-                        font-size: 1.5em;
-                        h4 {
-                            font-size: 2em;
-                            margin-bottom: 10px;
-                            text-transform: uppercase;
-                            font-family: 'BienBold', sans-serif;
-                            
-                        }
                     }
                 }
             }
