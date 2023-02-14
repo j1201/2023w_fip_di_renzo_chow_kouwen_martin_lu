@@ -18,16 +18,27 @@
     <!-- Verticle navbar -->
     <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i> 
 
-    <div class="sidebar" v-if="sideBar">
-        <div class="nav-content">
-            <img src="images/logo_blk.png" alt="win the match's logo">
-            <ul>
-            <li><a href="#">Manifesto</a></li>
-            <li><a href="#">Campaign</a></li>
-            <li><a href="#">Resources</a></li>
-            </ul>
+    <header>
+        <div class="ham-menu">
+            <i class="fas fa-bars" @click="showMobileMenu()"></i>
         </div>
-    </div>
+        <div class="sidebar" v-if="sideBar">
+            <h2 class="hidden"></h2>
+            <div class="nav-content">
+                <img src="/images/logo_blk.png" alt="">
+                <ul>
+                    <li><a href="#">Manifesto</a></li>
+                    <li><a href="#">Campagins</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="heroSec"">
+        <h2 class="hidden"></h2>
+    </section>
       
 
     <!-- Hero Video -->
@@ -40,7 +51,85 @@
         </div>
     </div>
 
-    <!-- Manifesto -->
+    <!-- The story section -->
+    <section id="storySecMain">
+        <div class="story-text" href="#showMenu">
+            <h2>Manifesto</h2>
+            <div class="manoItem">
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
+                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                <div class="readmoreCtn">
+                    <p>Read More</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="manoItem">
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
+                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                <div class="readmoreCtn">
+                    <p>Read More</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="manoItem">
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
+                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
+                <div class="readmoreCtn">
+                    <p>Read More</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div id="manoStat">
+                <div class="statBlock">
+                    <h4>Two In Ten</h4>
+                    <p>households have a child that plays hockey across the country</p>
+                </div>
+                <div class="statBlock">
+                    <h4>Two In Ten</h4>
+                    <p>households have a child that plays hockey across the country</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="campaign" class="story-text">
+            <h2>Campaign</h2>
+            
+            <!-- print ad -->
+            <div>
+                <h3>WinTheMatch Series</h3>
+                <p>Deploy series of display print ads to bring strong awareness to the topic</p>
+            </div>
+    
+            <!-- video -->
+            <div>
+                <h3>Video Title</h3>
+                <p>A mini documentary for the insight and first hand accounts</p>
+            </div>
+    
+            <!-- video -->
+            <div>
+                <h3>Social (Media) Impact</h3>
+                <p>Deploy series of display print ads to bring strong awareness to the topic</p>
+            </div>
+    
+        </div>
+    
+        <!-- Resources -->
+        <div id="resources" class="story-text">
+            <h2>Resources</h2>
+            <p>In efforts to bring a communal answer to these questions, WinTheMatch’s main objective is to stop</p>
+            <div>
+                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
+                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
+                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Manifesto 
     <div class="manifesto" href="#showMenu">
         <h2>Manifesto</h2>
         <div>
@@ -67,40 +156,7 @@
         </div>
     </div>
 
-    <!-- Campaign -->
-    <div class="campaign">
-        <h2>Campaign</h2>
-        
-        <!-- print ad -->
-        <div>
-            <h3>WinTheMatch Series</h3>
-            <p>Deploy series of display print ads to bring strong awareness to the topic</p>
-        </div>
-
-        <!-- video -->
-        <div>
-            <h3>Video Title</h3>
-            <p>A mini documentary for the insight and first hand accounts</p>
-        </div>
-
-        <!-- video -->
-        <div>
-            <h3>Social (Media) Impact</h3>
-            <p>Deploy series of display print ads to bring strong awareness to the topic</p>
-        </div>
-
-    </div>
-
-    <!-- Resources -->
-    <div class="resources">
-        <h2>Resources</h2>
-        <p>In efforts to bring a communal answer to these questions, WinTheMatch’s main objective is to stop</p>
-        <div>
-            <img src="https://via.placeholder.com/200x200?text=resources" alt="">
-            <img src="https://via.placeholder.com/200x200?text=resources" alt="">
-            <img src="https://via.placeholder.com/200x200?text=resources" alt="">
-        </div>
-    </div>
+    -->
     
 </main>
 
