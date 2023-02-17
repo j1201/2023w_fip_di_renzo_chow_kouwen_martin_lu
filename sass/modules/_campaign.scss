@@ -1,0 +1,34 @@
+#campaign {
+    margin-top: 10em;
+    color: $main-grey;
+
+    div {
+        height: 500px;
+        padding:30px;
+
+        h3 {
+            font-size: 5em;
+        }
+
+        &:nth-child(even) {
+            background-color: $main-red;
+            text-align: right;
+        }
+        &:nth-child(odd) {
+            background-color: $second-blue;
+        }
+
+        
+    }
+
+    @include desktop {
+        div {
+            padding: 50px;
+        }
+
+    }
+}
+
+#resources {
+    margin-top: 10em;
+}
