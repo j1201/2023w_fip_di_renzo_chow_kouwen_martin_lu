@@ -12,7 +12,7 @@
 
         data() {
             return {
-                //showLoader: setTimeout(this.hideLoader, 2000),
+                showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false
                 
             }
@@ -25,7 +25,7 @@
             },
 
             handleScroll() {
-                if(window.location.href = "#showMenu") {
+                if(window.location.href = "#showMenu") {-
                     this.sideBar = true;
                 }
             },
