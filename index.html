@@ -18,7 +18,7 @@
     <!-- Verticle navbar -->
     <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i> 
 
-    <header>
+    <header class="hidden">
         <div class="ham-menu">
             <i class="fas fa-bars" @click="showMobileMenu()"></i>
         </div>
@@ -36,9 +36,18 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="heroSec"">
+    <section id="heroSec" class="hidden">
         <h2 class="hidden"></h2>
     </section>
+
+    <div id="heroVideo">
+        <video src="/video/title.mp4" autoplay="1" playsinline muted></video>
+        <div id="heroButt">
+            <button>Watch Video</button>
+            <button>Sign Petition</button>
+            <button>Read Manifesto</button>
+        </div>
+    </div>
       
 
     <!-- Hero Video -->
@@ -90,6 +99,26 @@
                 </div>
             </div>
         </div>
+
+        <!-- petition -->
+        <div id="petition">
+            <div id="petitionHeader">                
+                <h2>Join The Game</h2>
+                <p>Simply sign your name to help raise awareness of the match againt bully in Hockey, and find your name in the petitions</p>
+            </div>
+            <div id="petitionForm">
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Enter Your Name">
+                        <p>Will</p>
+                    </div>
+                    <p>Win The Game</p>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+
+
 
 
         <div id="campaign" class="story-text">
