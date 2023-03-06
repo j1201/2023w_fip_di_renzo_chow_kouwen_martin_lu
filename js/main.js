@@ -13,8 +13,9 @@
         data() {
             return {
                 showLoader: setTimeout(this.hideLoader, 2000),
-                sideBar: false
-                
+                sideBar: false,
+                isHidden: true,
+                isActive: false
             }
         },
 
@@ -25,13 +26,18 @@
             },
 
             handleScroll() {
-                if(window.location.href = "#showMenu") {-
-                    this.sideBar = true;
+                if(window.location.href = "#showMenu") {
+                   this.sideBar = true;
                 }
             },
 
             hideLoader() {
                 document.querySelector("#preloader").style.display = "none";
+            },
+
+            openCarousal() {
+                this.isActive = !this.isActive
+                this.isHidden = !this.isActive
             }
         }
     }).mount('#app')

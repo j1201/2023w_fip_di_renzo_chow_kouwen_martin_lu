@@ -1,31 +1,70 @@
 #campaign {
     margin-top: 10em;
     color: $main-grey;
+    background-color: $main-black;
 
-    div {
-        height: 500px;
-        padding:30px;
 
-        h3 {
-            font-size: 5em;
-        }
-
-        &:nth-child(even) {
-            background-color: $main-red;
-            text-align: right;
-        }
-        &:nth-child(odd) {
-            background-color: $second-blue;
-        }
-
-        
-    }
 
     @include desktop {
-        div {
-            padding: 50px;
+        .campaignBlock {
+            background-color: $second-blue;
+            cursor: pointer;
+            & > div {
+                background-image: url(/images/print1.jpg);
+                background-size: 50%;
+                background-repeat: no-repeat;
+                transition: all 0.5s ease;
+                display: flex;
+                .campaignHeading {
+                    padding:50px;
+                    margin-left: auto;
+                    transition: all 0.5s ease;
+                    h3 {
+                        font-size: 5em;
+                        font-family: "BienSemiBold";
+                    }
+                }
+            }
+            &:hover {
+                & > div {
+                    background-size: 52%;
+                    .campaignHeading {
+                        margin-right: 20px;
+                    }
+                }
+            }
         }
 
+        .campaignOpen {
+            & > div {
+                background-image: none;
+                .campaignHeading {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+
+        .carouselOver {
+            img {
+                width: 40% !important;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .adDesc {
+                padding:30px 50px;
+                background-color: $second-blue;
+                p {
+                    font-size: 1.5rem;
+                    font-family: "BienReg";
+                    text-align: end;
+                    border-top: 0.5px $main-grey solid;
+                    padding-top: 20px;
+                }
+            }
+        }
     }
 }
 
