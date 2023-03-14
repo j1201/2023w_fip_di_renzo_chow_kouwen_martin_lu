@@ -18,7 +18,7 @@
     <!-- Verticle navbar -->
     <i class="fas fa-bars ham-menu" @click="showMobileMenu()"></i> 
 
-    <header class="hidden">
+    <header class="">
         <div class="ham-menu">
             <i class="fas fa-bars" @click="showMobileMenu()"></i>
         </div>
@@ -27,9 +27,9 @@
             <div class="nav-content">
                 <img src="/images/logo_blk.png" alt="">
                 <ul>
-                    <li><a href="#">Manifesto</a></li>
-                    <li><a href="#">Campagins</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="#storySecMain">Manifesto</a></li>
+                    <li><a href="#petition">Campagins</a></li>
+                    <li><a href="#resources">Resources</a></li>
                 </ul>
             </div>
         </div>
@@ -43,16 +43,16 @@
     <div id="heroVideo">
         <video src="/video/title.mp4" autoplay="1" playsinline muted></video>
         <div id="heroButt">
-            <button>Watch Video</button>
-            <button>Sign Petition</button>
-            <button>Read Manifesto</button>
+            <a href="#video">Watch Video</a>
+            <a href="#petition">Sign Petition</a>
+            <a href="#storySecMain">Read Manifesto</a>
         </div>
     </div>
       
 
     <!-- Hero Video -->
     <div>
-        <div class="video-container">
+        <div class="video-container" id="video">
             <video controls class="video" poster="https://via.placeholder.com/1920x1080?text=Video" >
                 <source src="#" type="video/webm">
                 <source src="#" type="video/mp4">
@@ -62,7 +62,7 @@
 
     <!-- The story section -->
     <section id="storySecMain">
-        <div class="story-text" href="#showMenu">
+        <div class="story-text" id="showMenu">
             <h2>Manifesto</h2>
             <div class="manoItem">
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
@@ -116,6 +116,9 @@
                     <button>Submit</button>
                 </form>
             </div>
+        </div>
+        <div class="text-loop-scroll">
+            <li v-for="name in petitionData">{{ name }}</li>
         </div>
 
 

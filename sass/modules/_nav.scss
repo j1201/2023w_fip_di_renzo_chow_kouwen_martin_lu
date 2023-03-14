@@ -65,6 +65,10 @@
         }
     }
 
+    ul li.active a {
+        color: red;
+      }
+
     &:active {
         transition: opacity 2s ease-in 2s;
     }

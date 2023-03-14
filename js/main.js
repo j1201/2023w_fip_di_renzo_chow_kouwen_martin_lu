@@ -3,17 +3,27 @@
 
     createApp({
         created() {
+            // get your remote data here 
+            fetch('./data/data.json')
+            //fetch('./scripts/json.php')
+                .then(res => res.json()) 
+                .then(data => this.petitionData = data) 
+            .catch(error => {
+                console.error(error);
+            });
+        },
+        
+        mounted() {
             window.addEventListener('scroll', this.handleScroll);
         },
-
-        mounted() {
-            
-        },
-
+        
         data() {
             return {
-                showLoader: setTimeout(this.hideLoader, 2000),
-                sideBar: false
+               // showLoader: setTimeout(this.hideLoader, 2000),
+                sideBar: false,
+                currentSection: '',
+                sections: [],
+                petitionData: {}
                 
             }
         },
@@ -25,14 +35,17 @@
             },
 
             handleScroll() {
-                if(window.location.href = "#showMenu") {-
-                    this.sideBar = true;
+                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop) {
+                  this.sideBar = true;
+                } else {
+                  this.sideBar = false;
                 }
-            },
+              }
 
-            hideLoader() {
-                document.querySelector("#preloader").style.display = "none";
-            }
+            // hideLoader() {
+            //     document.querySelector("#preloader").style.display = "none";
+            // },
+
         }
     }).mount('#app')
 
