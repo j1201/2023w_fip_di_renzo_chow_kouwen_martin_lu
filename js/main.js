@@ -5,7 +5,7 @@ import TheManiPara from "./components/ManiPara.js";
 
     createApp({
         created() {
-            window.addEventListener('scroll', this.handleScroll);
+            //window.addEventListener('scroll', this.handleScroll);
         },
 
         mounted() {
@@ -17,7 +17,17 @@ import TheManiPara from "./components/ManiPara.js";
                 showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false,
                 isActive: false,
-                paras: [1,2,3]
+                paras: [
+                    {
+                        "id": "1"
+                    },
+                    {
+                        "id": "2"
+                    },
+                    {
+                        "id": "3"
+                    }
+                ]
             }
         },
 

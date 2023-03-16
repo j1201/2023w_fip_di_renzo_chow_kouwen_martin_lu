@@ -4,7 +4,6 @@ export default {
 
     template: `
     <div class="manoItem" :id='"para"+para'>
-        <span>{{para}}<span>
         <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
         <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
         <div class="readmoreCtn" @click="hitthisshit">
@@ -16,9 +15,11 @@ export default {
 
     methods: {
         hitthisshit() {
-            let id = "#para" + this.para + ' article'
-            console.log(id)
-            document.querySelector(id).classList.toggle('expandIn')
+            let id = "#para" + this.para.id + ' article'
+            //console.log(id)
+            let me = document.querySelector(id)
+            //.classList.toggle('expandIn')
+            debugger
         }
     }
 
