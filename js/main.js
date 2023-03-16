@@ -19,7 +19,6 @@
         
         data() {
             return {
-               // showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false,
                 currentSection: '',
                 sections: [],
@@ -42,9 +41,6 @@
                 }
               }
 
-            // hideLoader() {
-            //     document.querySelector("#preloader").style.display = "none";
-            // },
 
         }
     }).mount('#app')
