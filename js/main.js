@@ -1,3 +1,5 @@
+import TheManiPara from "./components/ManiPara.js";
+
 (() => {
     const { createApp } = Vue
 
@@ -14,7 +16,8 @@
             return {
                 showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false,
-                isActive: false
+                isActive: false,
+                paras: [1,2,3]
             }
         },
 
@@ -42,9 +45,13 @@
                 document.querySelector('#minidoc').classList.toggle('campaignOpen')
             },
 
-            
+        },
 
+        components: {
+            manip: TheManiPara
         }
+
+
     }).mount('#app')
 
 })()

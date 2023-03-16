@@ -89,6 +89,8 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
+            <manip v-for="para in paras" :para="para"></manip>
+
             <div id="manoStat">
                 <div class="statBlock">
                     <h4>Two In Ten</h4>
@@ -99,6 +101,10 @@
                     <p>households have a child that plays hockey across the country</p>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <manip v-for="para in paras" :para="para"></manip>
         </div>
 
         <!-- petition -->
