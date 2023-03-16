@@ -124,73 +124,79 @@
 
         <div id="campaign" class="story-text">
             <h2>Campaign</h2>
-            
-            <!-- print ad -->
-            <div class="campaignBlock" :class="{ campaignOpen: isActive }" @click="openCarousal">
-                <div>
-                    <div class="campaignHeading">
-                        <h3>WinTheMatch Series</h3>
-                        <p>Deploy series of display print ads to bring strong awareness to the topic</p>
+            <div>
+                <!-- print ad -->
+                <div class="campaignBlock" id="winpirnt">
+                    <div class="campaignContain" @click="openCarousal">
+                        <div class="campaignHeading">
+                            <h3>WinTheMatch Series</h3>
+                            <p>Deploy series of display print ads to bring strong awareness to the topic</p>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel collapse slide " data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active carouselOver">
+                            <div class="adDesc">
+                                <p >This is where the text goes</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/print1.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item carouselOver">
+                            <div class="adDesc">
+                                <p >This is where the text goes</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/print2.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item carouselOver">
+                            <div class="adDesc">
+                                <p >This is where the text goes</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/print3.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item carouselOver">
+                            <div class="adDesc">
+                                <p >This is where the text goes</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/print4.jpg" alt="Fourth slide">
+                          </div>
+                          <div class="carousel-item carouselOver">
+                            <div class="adDesc">
+                                <p >This is where the text goes</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/print5.jpg" alt="Fifth slide">
+                          </div>
+        
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-
-            <div id="carouselExampleIndicators" class="carousel slide " :class="{ hidden: isHidden }" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active carouselOver">
-                    <div class="adDesc">
-                        <p >This is where the text goes</p>
-                    </div>
-                    <img class="d-block w-100" src="/images/print1.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item carouselOver">
-                    <div class="adDesc">
-                        <p >This is where the text goes</p>
-                    </div>
-                    <img class="d-block w-100" src="/images/print2.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item carouselOver">
-                    <div class="adDesc">
-                        <p >This is where the text goes</p>
-                    </div>
-                    <img class="d-block w-100" src="/images/print3.jpg" alt="Third slide">
-                  </div>
-                  <div class="carousel-item carouselOver">
-                    <div class="adDesc">
-                        <p >This is where the text goes</p>
-                    </div>
-                    <img class="d-block w-100" src="/images/print4.jpg" alt="Fourth slide">
-                  </div>
-                  <div class="carousel-item carouselOver">
-                    <div class="adDesc">
-                        <p >This is where the text goes</p>
-                    </div>
-                    <img class="d-block w-100" src="/images/print5.jpg" alt="Fifth slide">
-                  </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
 
     
-            <!-- video -->
-            <div>
-                <h3>Video Title</h3>
-                <p>A mini documentary for the insight and first hand accounts</p>
+                <div class="campaignBlock" id="minidoc">
+                    <div class="campaignContain" @click="openCarousal">
+                        <div class="campaignHeading">
+                            <h3>WinTheMatch Mini Documentary</h3>
+                            <p>A mini documentary for the insight and first hand accounts</p>
+                        </div>
+                    </div>
+                    <div class="collapse">
+                        <iframe style="width: 100%; height: 45vw;" src="https://www.youtube.com/embed/oRpYZDHpvuc" title="Atmospheric Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
     
         </div>

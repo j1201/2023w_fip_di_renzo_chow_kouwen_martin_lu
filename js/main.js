@@ -14,7 +14,6 @@
             return {
                 showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false,
-                isHidden: true,
                 isActive: false
             }
         },
@@ -31,14 +30,16 @@
                 }
             },
 
-            hideLoader() {
-                document.querySelector("#preloader").style.display = "none";
-            },
+            // hideLoader() {
+            //     document.querySelector("#preloader").style.display = "none";
+            // },
 
             openCarousal() {
-                this.isActive = !this.isActive
-                this.isHidden = !this.isActive
-            }
+                //this.isActive = !this.isActive
+                document.querySelector('#minidoc').classList.toggle('campaignOpen')
+            },
+
+
         }
     }).mount('#app')
 
