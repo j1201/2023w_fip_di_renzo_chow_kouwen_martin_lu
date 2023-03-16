@@ -118,7 +118,7 @@
             </div>
         </div>
         <div class="text-loop-scroll">
-            <li v-for="name in petitionData">{{ name }}</li>
+            <li v-for="name in petitionData" :name="name">{{ name.petitioner }}</li>
         </div>
 
 

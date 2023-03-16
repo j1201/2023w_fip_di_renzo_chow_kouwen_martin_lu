@@ -4,8 +4,8 @@
     createApp({
         created() {
             // get your remote data here 
-            fetch('./data/data.json')
-            //fetch('./scripts/json.php')
+            //fetch('./data/data.json')
+            fetch('./scripts/json.php')
                 .then(res => res.json()) 
                 .then(data => this.petitionData = data) 
             .catch(error => {
