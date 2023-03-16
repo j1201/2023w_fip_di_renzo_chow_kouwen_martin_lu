@@ -5,10 +5,10 @@ import TheManiPara from "./components/ManiPara.js";
 
     createApp({
         created() {
-            window.addEventListener('scroll', this.handleScroll);
-        },
+        //     window.addEventListener('scroll', this.handleScroll);
+        // },
 
-        mounted() {
+        // mounted() {
             
         },
 
