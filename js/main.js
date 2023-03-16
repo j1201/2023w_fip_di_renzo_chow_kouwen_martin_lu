@@ -33,12 +33,16 @@
             // hideLoader() {
             //     document.querySelector("#preloader").style.display = "none";
             // },
-
             openCarousal() {
+                //this.isActive = !this.isActive
+                document.querySelector('#winpirnt').classList.toggle('campaignOpen')
+            },
+            openVideo() {
                 //this.isActive = !this.isActive
                 document.querySelector('#minidoc').classList.toggle('campaignOpen')
             },
 
+            
 
         }
     }).mount('#app')
