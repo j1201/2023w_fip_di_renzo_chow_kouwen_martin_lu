@@ -14,10 +14,13 @@ import TheManiPara from "./components/ManiPara.js";
 
         data() {
             return {
-                // showLoader: setTimeout(this.hideLoader, 2000),
-                // sideBar: false,
+                sideBar: false,
+                currentSection: '',
+                sections: [],
+                petitionData: {}
                 isActive: false,
                 paras: [1,2,3]
+
             }
         },
 
@@ -33,9 +36,7 @@ import TheManiPara from "./components/ManiPara.js";
                 }
             },
 
-            // hideLoader() {
-            //     document.querySelector("#preloader").style.display = "none";
-            // },
+
             openCarousal() {
                 //this.isActive = !this.isActive
                 document.querySelector('#winpirnt').classList.toggle('campaignOpen')
