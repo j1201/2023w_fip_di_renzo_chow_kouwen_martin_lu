@@ -14,8 +14,8 @@ import TheManiPara from "./components/ManiPara.js";
 
         data() {
             return {
-                showLoader: setTimeout(this.hideLoader, 2000),
-                sideBar: false,
+                // showLoader: setTimeout(this.hideLoader, 2000),
+                // sideBar: false,
                 isActive: false,
                 paras: [1,2,3]
             }
