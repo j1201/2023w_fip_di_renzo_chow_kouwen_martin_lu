@@ -5,17 +5,17 @@ import TheManiPara from "./components/ManiPara.js";
 
     createApp({
         created() {
-            window.addEventListener('scroll', this.handleScroll);
-        },
+        //     window.addEventListener('scroll', this.handleScroll);
+        // },
 
-        mounted() {
+        // mounted() {
             
         },
 
         data() {
             return {
-                showLoader: setTimeout(this.hideLoader, 2000),
-                sideBar: false,
+                // showLoader: setTimeout(this.hideLoader, 2000),
+                // sideBar: false,
                 isActive: false,
                 paras: [1,2,3]
             }
