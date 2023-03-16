@@ -22,7 +22,9 @@
     padding: 0 25vw;
     transform: translateY(-350px);
     
-    button {
+    button,a {
+        text-decoration: none;
+        text-align: center;
         border: 1px white solid;
         background: none;
         padding: 1.2rem 0;
