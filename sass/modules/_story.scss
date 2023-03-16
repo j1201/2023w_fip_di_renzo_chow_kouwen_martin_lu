@@ -22,17 +22,22 @@
             padding:50px 30px;
             font-family: 'BienMed', sans-serif;
             border-bottom: 1px black solid;
+
             h3 {
                 font-size: 1.2em;
                 line-height: 1.2em;
             }
             .manoExt {
                 font-size: 1em;
-                display: block;
                 margin-top: 0.5em;
                 margin-bottom: 1em;
                 line-height: 1.2em;
                 display: none;
+            }
+
+            .expandIn {
+                display: block;
+                animation: expandIn 2s ease forwards;
             }
 
             .readmoreCtn {
@@ -117,3 +122,9 @@
             }
         }
     }
+
+
+@keyframes expandIn {
+    from {transform: scaleY(0);}
+    to {transform: scaleY(1);}
+}

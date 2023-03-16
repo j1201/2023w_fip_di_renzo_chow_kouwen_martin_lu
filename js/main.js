@@ -1,29 +1,26 @@
+import TheManiPara from "./components/ManiPara.js";
+
 (() => {
     const { createApp } = Vue
 
     createApp({
         created() {
-            // get your remote data here 
-            //fetch('./data/data.json')
-            fetch('./scripts/json.php')
-                .then(res => res.json()) 
-                .then(data => this.petitionData = data) 
-            .catch(error => {
-                console.error(error);
-            });
+        //     window.addEventListener('scroll', this.handleScroll);
+        // },
+
+        // mounted() {
+            
         },
-        
-        mounted() {
-            window.addEventListener('scroll', this.handleScroll);
-        },
-        
+
         data() {
             return {
                 sideBar: false,
                 currentSection: '',
                 sections: [],
                 petitionData: {}
-                
+                isActive: false,
+                paras: [1,2,3]
+
             }
         },
 
@@ -34,15 +31,28 @@
             },
 
             handleScroll() {
-                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop) {
-                  this.sideBar = true;
-                } else {
-                  this.sideBar = false;
+                if(window.location.href = "#showMenu") {
+                   this.sideBar = true;
                 }
-              }
+            },
 
 
+            openCarousal() {
+                //this.isActive = !this.isActive
+                document.querySelector('#winpirnt').classList.toggle('campaignOpen')
+            },
+            openVideo() {
+                //this.isActive = !this.isActive
+                document.querySelector('#minidoc').classList.toggle('campaignOpen')
+            },
+
+        },
+
+        components: {
+            manip: TheManiPara
         }
+
+
     }).mount('#app')
 
 })()
