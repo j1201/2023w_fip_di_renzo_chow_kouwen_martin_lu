@@ -89,7 +89,7 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div> -->
-            <manip v-for="para in paras" :para="para"></manip>
+            <manip v-for="para in maniPara" :para="para"></manip>
 
             <div id="manoStat">
                 <div class="statBlock">
@@ -121,7 +121,7 @@
             </div>
         </div>
         <div class="text-loop-scroll">
-            <li v-for="name in petitionData" :name="name">{{ name.petitioner }}</li>
+            <li v-for="name in petitionDataNew" :name="name">{{ name.petitioner }}</li>
         </div>
 
 

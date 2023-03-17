@@ -4,12 +4,39 @@ import TheManiPara from "./components/ManiPara.js";
     const { createApp } = Vue
 
     createApp({
+        // created() {
+        //     // get your remote data here 
+        //     //fetch('./data/data.json')
+        //     fetch('./scripts/json.php')
+        //         .then(res => res.json()) 
+        //         .then(data => this.petitionData = data) 
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        // },
+        // created() {
+        //     // get your remote data here 
+        //     fetch('./data/data.json')
+        //     //fetch('./scripts/json.php')
+        //         .then(res => res.json()) 
+        //         .then(data => this.petitionDataNew = data) 
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        // },
         created() {
             // get your remote data here 
-            //fetch('./data/data.json')
-            fetch('./scripts/json.php')
+            fetch('./data/manifesto.json')
+            //fetch('./scripts/json.php')
                 .then(res => res.json()) 
-                .then(data => this.petitionData = data) 
+                .then(data => this.maniPara = data) 
+            .catch(error => {
+                console.error(error);
+            });
+
+            fetch('./data/data.json')
+                .then(res => res.json()) 
+                .then(data => this.petitionDataNew = data) 
             .catch(error => {
                 console.error(error);
             });
@@ -26,8 +53,10 @@ import TheManiPara from "./components/ManiPara.js";
                 currentSection: '',
                 sections: [],
                 petitionData: {},
+                petitionDataNew: {},
                 isActive: false,
-                paras: [1,2,3]
+                //paras: [1,2,3],
+                maniPara: {}
             }
         },
 
