@@ -1,3 +1,5 @@
+import TheManiPara from "./components/ManiPara.js";
+
 (() => {
     const { createApp } = Vue
 
@@ -19,12 +21,13 @@
         
         data() {
             return {
-               // showLoader: setTimeout(this.hideLoader, 2000),
+                showLoader: setTimeout(this.hideLoader, 2000),
                 sideBar: false,
                 currentSection: '',
                 sections: [],
-                petitionData: {}
-                
+                petitionData: {},
+                isActive: false,
+                paras: [1,2,3]
             }
         },
 
@@ -40,13 +43,30 @@
                 } else {
                   this.sideBar = false;
                 }
-              }
+            },
+
+            openCarousal() {
+                //this.isActive = !this.isActive
+                document.querySelector('#winpirnt').classList.toggle('campaignOpen')
+            },
+
+            openVideo() {
+                //this.isActive = !this.isActive
+                document.querySelector('#minidoc').classList.toggle('campaignOpen')
+            },
 
             // hideLoader() {
             //     document.querySelector("#preloader").style.display = "none";
             // },
 
+        },
+
+        components: {
+            manip: TheManiPara
         }
+
+
+        
     }).mount('#app')
 
 })()
