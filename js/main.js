@@ -1,4 +1,5 @@
 import TheManiPara from "./components/ManiPara.js";
+import TheCampaignComponent from "./components/CampaignCom.js";
 
 (() => {
     const { createApp } = Vue
@@ -40,6 +41,13 @@ import TheManiPara from "./components/ManiPara.js";
             .catch(error => {
                 console.error(error);
             });
+
+            fetch('./data/campaign.json')
+                .then(res => res.json()) 
+                .then(data => this.campaignData = data) 
+            .catch(error => {
+                console.error(error);
+            });
         },
         
         mounted() {
@@ -56,7 +64,8 @@ import TheManiPara from "./components/ManiPara.js";
                 petitionDataNew: {},
                 isActive: false,
                 //paras: [1,2,3],
-                maniPara: {}
+                maniPara: {},
+                campaignData: {}
             }
         },
 
@@ -91,7 +100,8 @@ import TheManiPara from "./components/ManiPara.js";
         },
 
         components: {
-            manip: TheManiPara
+            manip: TheManiPara,
+            campcom: TheCampaignComponent
         }
 
 

@@ -131,7 +131,7 @@
             <h2>Campaign</h2>
             <div>
                 <!-- print ad -->
-                <div class="campaignBlock" id="winpirnt">
+                <!-- <div class="campaignBlock" id="winpirnt">
                     <div class="campaignContain" @click="openCarousal">
                         <div class="campaignHeading">
                             <h3>WinTheMatch Series</h3>
@@ -188,7 +188,9 @@
                           <span class="sr-only">Next</span>
                         </a>
                     </div>
-                </div>
+                </div> -->
+
+                <campcom v-for="block in campaignData" :block="block"></campcom>
 
     
                 <div class="campaignBlock" id="minidoc">

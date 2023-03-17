@@ -76,12 +76,16 @@
     
     @include desktop {
         display: block;
-        top: 0;
-
+        top: 0;        
         .nav-content {
+            animation: floatIn 0.5s ease forwards;
             width: 18vw;
             img {
                 width: 100%;
+            }
+
+            ul {
+                background-color: rgb(82, 82, 82);
             }
         }
         
@@ -97,3 +101,7 @@
     display: block;
 }
 
+@keyframes floatIn {
+    from {transform: translateX(-18vw);}
+    to {transform: translateX(0vw);}
+}

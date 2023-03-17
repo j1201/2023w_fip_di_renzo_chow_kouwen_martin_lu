@@ -11,7 +11,7 @@
             cursor: pointer;
             .campaignContain {
                 background-image: url(/images/campaign.png);
-                background-size: 50%;
+                background-size: 60%;
                 background-position: 0% 20%;
                 background-repeat: no-repeat;
                 transition: all 0.5s ease;
@@ -19,7 +19,7 @@
                 .campaignHeading {
                     padding:50px 0  ;
                     width: 65%;
-                    margin-left: 35%;
+                    margin-left: 28%;
                     transition: all 0.5s ease;
                     h3 {
                         font-size: 4em;
@@ -73,7 +73,7 @@
 
         .campaignOpen {
             .campaignContain{
-                background-image: none;
+                background-image: none !important;
                 .campaignHeading {
                     margin-left: 0 !important;
                     padding-left: 50px;
