@@ -1,42 +1,90 @@
-#heroSec {
-    height: 100vh;
-    background-color: $main-black;
-}
+// #heroSec {
+//     height: 100vh;
+//     background-color: $main-black;
+// }
 
 #heroVideo {
     width: 100vw;
     height: 100vh;
-    video {
-        object-fit: cover;
-
-    }
-}
-
-
-#heroButt {
+    display: flex;
+    background-color: black;
     justify-content: center;
-    //margin-top: -35vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 4vw;
-    padding: 0 25vw;
-    transform: translateY(-350px);
+    flex-direction: column;
+    video {
+        //object-fit: cover;
+        width: 100%;
+        //height: 100%;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+    #heroButt {
+        justify-content: center;
+        //margin-top: -35vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2vw;
+        padding: 0 5vw;
+        margin-top: 2rem;
+        //transform: translateY(-350px);
+        
+        button,a {
+            text-decoration: none;
+            text-align: center;
+            border: 0.5px white solid;
+            background: none;
+            padding: 0.7rem 0;
+            font-family: 'BienSemiBold', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: 0.7rem;
+        
+            &:hover {
+                background: white;
+                color: black;
     
-    button,a {
-        text-decoration: none;
-        text-align: center;
-        border: 1px white solid;
-        background: none;
-        padding: 1.2rem 0;
-        font-family: 'BienSemiBold', sans-serif;
-        text-transform: uppercase;
-        color: white;
-        font-size: 1.2rem;
-    
-        &:hover {
-            background: white;
-            color: black;
-
+            }
         }
+    
+    }
+
+    @include tablet {
+        #heroButt {
+            padding: 0 10vw;
+            button,a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+
+    @include desktop {
+        justify-content: start;
+
+
+        #heroButt {
+            //margin-top: -30vh;
+            grid-column-gap: 4vw;
+            padding: 0 20vw;
+            margin-top: 0;
+            //transform: translateY(-350px);
+            
+            button,a {
+                text-decoration: none;
+                text-align: center;
+                border: 1px white solid;
+                background: none;
+                padding: 1.2rem 0;
+                font-family: 'BienSemiBold', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                font-size: 1.2rem;
+            
+                &:hover {
+                    background: white;
+                    color: black;
+        
+                }
+            }
+        }        
     }
 }
