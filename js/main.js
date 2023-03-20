@@ -76,7 +76,7 @@ import TheCampaignComponent from "./components/CampaignCom.js";
             },
 
             handleScroll() {
-                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop) {
+                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop - 100) {
                   this.sideBar = true;
                 } else {
                   this.sideBar = false;

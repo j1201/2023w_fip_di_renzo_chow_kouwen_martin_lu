@@ -151,9 +151,15 @@
 
 }
 
+@keyframes scrolling-left1 {
+    0% {transform: translateY(-200%);}
+    99% {transform: translateY(200%);}
+    100% {transform: translateY(-200%);} 
+}
+
 .text-loop-scroll {
     font-size: 1.5rem;
-    animation: slide-left 2s linear infinite 0s;
+    //animation: slide-left 2s linear infinite 0s;
     line-height: 2em;
     position: relative;
     z-index: -1;
@@ -163,6 +169,7 @@
     font-family: "flood-std", sans-serif;
 
     li {
+        animation: scrolling-left1 2s linear infinite 0s;
         list-style-type: none;  
     }
 
@@ -174,5 +181,10 @@
         margin-right: auto;
         width: 60vw;
         font-size: 2rem;
+
+        li {
+            animation: scrolling-left1 2s linear infinite 0s;
+            list-style-type: none;  
+        }
     }
 }
