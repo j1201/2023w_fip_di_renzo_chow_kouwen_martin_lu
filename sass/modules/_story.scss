@@ -55,18 +55,21 @@
         }
 
         #manoStat {
-            display: block;
+            //display: block;
+            display: flex;
             margin-top: 80px;
             justify-content: space-between;
+            column-gap: 20px;
 
             .statBlock {
                 color: $main-grey;
                 background-color: $second-blue;
-                padding: 1.5em;
-                margin-bottom: 1em;
-                font-size: 1.5em;
+                padding: 1.9rem;
+                font-size: 0.9rem;
+                width: 50%;
+                //margin: 0 30px 1rem;
                 h4 {
-                    font-size: 2em;
+                    font-size: 3rem;
                     margin-bottom: 10px;
                     text-transform: uppercase;
                     font-family: 'BienBold', sans-serif;
@@ -85,7 +88,7 @@
                 display: flex;
     
                 .statBlock {
-                    width: 48%;
+                    width: 100%;
                 }
             }
         }
@@ -114,9 +117,13 @@
     
                 #manoStat {
                     display: flex;
+                    column-gap: 30px;
     
                     .statBlock {
-                        width: 48%;
+                        font-size: 1.1rem;
+                        h4 {
+                            font-size: 3.5rem;
+                        }
                     }
                 }
             }

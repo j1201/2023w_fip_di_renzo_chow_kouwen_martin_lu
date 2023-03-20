@@ -1,15 +1,50 @@
 import TheManiPara from "./components/ManiPara.js";
+import TheCampaignComponent from "./components/CampaignCom.js";
 
 (() => {
     const { createApp } = Vue
 
     createApp({
+        // created() {
+        //     // get your remote data here 
+        //     //fetch('./data/data.json')
+        //     fetch('./scripts/json.php')
+        //         .then(res => res.json()) 
+        //         .then(data => this.petitionData = data) 
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        // },
+        // created() {
+        //     // get your remote data here 
+        //     fetch('./data/data.json')
+        //     //fetch('./scripts/json.php')
+        //         .then(res => res.json()) 
+        //         .then(data => this.petitionDataNew = data) 
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        // },
         created() {
             // get your remote data here 
-            //fetch('./data/data.json')
-            fetch('./scripts/json.php')
+            fetch('./data/manifesto.json')
+            //fetch('./scripts/json.php')
                 .then(res => res.json()) 
-                .then(data => this.petitionData = data) 
+                .then(data => this.maniPara = data) 
+            .catch(error => {
+                console.error(error);
+            });
+
+            fetch('./data/data.json')
+                .then(res => res.json()) 
+                .then(data => this.petitionDataNew = data) 
+            .catch(error => {
+                console.error(error);
+            });
+
+            fetch('./data/campaign.json')
+                .then(res => res.json()) 
+                .then(data => this.campaignData = data) 
             .catch(error => {
                 console.error(error);
             });
@@ -26,8 +61,11 @@ import TheManiPara from "./components/ManiPara.js";
                 currentSection: '',
                 sections: [],
                 petitionData: {},
+                petitionDataNew: {},
                 isActive: false,
-                paras: [1,2,3]
+                //paras: [1,2,3],
+                maniPara: {},
+                campaignData: {}
             }
         },
 
@@ -38,7 +76,7 @@ import TheManiPara from "./components/ManiPara.js";
             },
 
             handleScroll() {
-                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop) {
+                if (window.pageYOffset >= document.querySelector('#showMenu').offsetTop - 100) {
                   this.sideBar = true;
                 } else {
                   this.sideBar = false;
@@ -62,7 +100,8 @@ import TheManiPara from "./components/ManiPara.js";
         },
 
         components: {
-            manip: TheManiPara
+            manip: TheManiPara,
+            campcom: TheCampaignComponent
         }
 
 
