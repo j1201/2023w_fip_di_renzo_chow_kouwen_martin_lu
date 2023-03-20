@@ -25,6 +25,10 @@
 
     }
 
+    .showForm {
+        width: 100%;
+    }
+
     #petitionForm {
         display: flex;
         align-items: center;
@@ -71,6 +75,15 @@
                 text-transform: uppercase;
             }
         }
+    }
+
+    .formSub {
+        font-size: 2rem;
+        text-align: center;
+        padding: 50px 30px;
+        font-family: 'BienSemiBold', sans-serif;
+        animation: scrolling-left2 0.5s ease forwards;
+
     }
 
     @include tablet {
@@ -160,6 +173,11 @@
 
 }
 
+@keyframes scrolling-left2 {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
+
 @keyframes scrolling-left1 {
     0% {transform: translateY(-200%);}
     99% {transform: translateY(200%);}
@@ -184,7 +202,7 @@
         list-style-type: none;
         position: absolute;
         top: 0;
-        animation: slide-down 10s linear infinite;
+        animation: slide-down 15s linear infinite;
         text-align: center;
         width: 100%;
 
@@ -210,7 +228,7 @@
         margin-right: auto;
         //width: 30vw;
         font-size: 2rem;
-        width: 50vw;
+        width: 600px;
 
         li {
             //animation: scrolling-left1 10s linear infinite 0s;

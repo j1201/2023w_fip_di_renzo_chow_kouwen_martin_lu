@@ -99,24 +99,22 @@
         
         <!-- petition -->
         <div id="petition">
-            <div v-if="showForm">
-                <div id="petitionHeader">                
-                    <h2>Join The Game</h2>
-                    <p>Simply sign your name to help raise awareness of the match againt bully in Hockey, and find your name in the petitions</p>
-                </div>
-                <div id="petitionForm">
-                    <form>
-                        <div>
-                            <input type="text" v-model="name" placeholder="Enter Your Name">
-                            <p>Will</p>
-                        </div>
-                        <p>Win The Game</p>
-                        <button @click="formSubmitted">Submit</button>
-                    </form>
-                </div>
+            <div id="petitionHeader">                
+                <h2>Join The Game</h2>
+                <p>Simply sign your name to help raise awareness of the match againt bully in Hockey, and find your name in the petitions</p>
             </div>
-            <div v-if="submitted">
-                <p>{{ name }}, thank you for signing the petition. Let's win together. </p>
+            <div id="petitionForm">
+                <form v-if="showForm">
+                    <div>
+                        <input type="text" v-model="name" placeholder="Enter Your Name">
+                        <p>Will</p>
+                    </div>
+                    <p>Win The Game</p>
+                    <button @click="formSubmitted">Submit</button>
+                </form>
+                <div v-if="submitted" class="formSub">
+                    <p>{{ name }}, thank you for signing the petition.<br>Let's win together. </p>
+                </div>
             </div>
         </div>
         <div class="text-loop-scroll">
