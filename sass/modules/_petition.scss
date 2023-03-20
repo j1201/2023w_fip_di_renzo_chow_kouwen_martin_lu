@@ -160,6 +160,12 @@
 
 }
 
+@keyframes scrolling-left1 {
+    0% {transform: translateY(-200%);}
+    99% {transform: translateY(200%);}
+    100% {transform: translateY(-200%);} 
+}
+
 .text-loop-scroll {
     font-size: 1.5rem;
     //animation: slide-left 2s linear infinite 0s;
@@ -202,5 +208,10 @@
         margin-right: 12vw;
         width: 30vw;
         font-size: 2rem;
+
+        li {
+            animation: scrolling-left1 2s linear infinite 0s;
+            list-style-type: none;  
+        }
     }
 }
