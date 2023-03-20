@@ -49,6 +49,7 @@
 
     @include tablet {
         #heroButt {
+            margin-top: 0vw;
             padding: 0 10vw;
             button,a {
                 font-size: 0.9rem;
@@ -58,14 +59,18 @@
 
 
     @include desktop {
-        justify-content: start;
+        display: block;
+    
 
+        video {
+            width: 100%;
+            height: 80%;
+        }
 
         #heroButt {
-            //margin-top: -30vh;
+            //margin-top: -150px;
             grid-column-gap: 4vw;
             padding: 0 20vw;
-            margin-top: 0;
             //transform: translateY(-350px);
             
             button,a {
