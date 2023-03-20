@@ -34,10 +34,12 @@
 
     .nav-content {
         width: 100vw;
-        background-color: $main-black;
+        background-color: $main-red;
         animation: floatUp 0.6s ease forwards;
+
         img {
             height: 15vh;
+            margin-left: 1vw;
         }
     }
     
@@ -45,6 +47,7 @@
         list-style:none;
         padding: 20px;
         background-color: $main-grey;
+        width: 100%;
     }
     
     ul li a{
@@ -86,7 +89,7 @@
             //border-right: 0.5px rgb(182, 182, 182) solid;
             border-bottom: 8px rgb(233, 233, 233) solid;
             img {
-                width: 100%;
+                //width: 100%;
             }
 
             ul {

@@ -172,12 +172,13 @@
     line-height: 2em;
     position: relative;
     z-index: -1;
-    display: block;
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
     height: 600px;
     overflow: hidden;
     transform: translateY(-100px);
-    //width: 8em;
     font-family: "flood-std", sans-serif;
+
 
     li {
         list-style-type: none;
@@ -186,16 +187,17 @@
         animation: slide-down 10s linear infinite;
         text-align: center;
         width: 100%;
+
     }
 
-    @for $i from 1 through 20 {
+    @for $i from 1 through 40 {
         li {
           
           // :nth-child(1-9) 
           &:nth-child(#{$i}) {
             
             // Delay the animation. Delay increases as items loop.
-            animation-delay: $i * (1s);
+            animation-delay: $i * (0.5s);
           }
         }
       }
@@ -205,13 +207,18 @@
         // grid-template-columns: 1fr 1fr;
         //display: block;
         margin-left: auto;
-        margin-right: 12vw;
-        width: 30vw;
+        margin-right: auto;
+        //width: 30vw;
         font-size: 2rem;
+        width: 50vw;
 
         li {
-            animation: scrolling-left1 2s linear infinite 0s;
-            list-style-type: none;  
+            //animation: scrolling-left1 10s linear infinite 0s;
+            list-style-type: none;
+            text-align: left;
+            &:nth-child(even) {
+                text-align: right;
+            }
         }
     }
 }
