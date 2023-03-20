@@ -65,7 +65,10 @@ import TheCampaignComponent from "./components/CampaignCom.js";
                 isActive: false,
                 //paras: [1,2,3],
                 maniPara: {},
-                campaignData: {}
+                campaignData: {},
+                name: '',
+                showForm: true,
+                submitted: false
             }
         },
 
@@ -93,9 +96,10 @@ import TheCampaignComponent from "./components/CampaignCom.js";
                 document.querySelector('#minidoc').classList.toggle('campaignOpen')
             },
 
-            // hideLoader() {
-            //     document.querySelector("#preloader").style.display = "none";
-            // },
+            formSubmitted() {
+                this.showForm = false;
+                this.submitted = true;
+            }
 
         },
 
