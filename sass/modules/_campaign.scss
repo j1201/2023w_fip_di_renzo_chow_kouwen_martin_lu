@@ -88,7 +88,7 @@
     }
 
     @include desktop {
-        margin-top: 7rem;
+        margin-top: 1rem;
 
         .campaignBlock {
             background-color: $second-blue;
@@ -135,7 +135,7 @@
         .campaignBlock:nth-child(even) {
             background-color: $main-red;
             .campaignContain {
-                background-size: 50%;
+                background-size: 60%;
                 background-position: 100% 20%;
                 .campaignHeading {
                     padding-top: 50px;

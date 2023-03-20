@@ -141,12 +141,21 @@
     }
 }   
 
-@keyframes slide-left {
+// @keyframes slide-left {
+//     0% {
+//         transform: translateY(-4em);
+//     }
+//     100% {
+//         transform: translateY(-2em);
+//     }
+
+// }
+@keyframes slide-down {
     0% {
-        transform: translateY(-4em);
+        top: 0;
     }
     100% {
-        transform: translateY(-2em);
+        top: 600px;
     }
 
 }
@@ -164,22 +173,40 @@
     position: relative;
     z-index: -1;
     display: block;
-    text-align: center;
+    height: 600px;
+    overflow: hidden;
+    transform: translateY(-100px);
     //width: 8em;
     font-family: "flood-std", sans-serif;
 
     li {
-        animation: scrolling-left1 2s linear infinite 0s;
-        list-style-type: none;  
+        list-style-type: none;
+        position: absolute;
+        top: 0;
+        animation: slide-down 10s linear infinite;
+        text-align: center;
+        width: 100%;
     }
 
+    @for $i from 1 through 20 {
+        li {
+          
+          // :nth-child(1-9) 
+          &:nth-child(#{$i}) {
+            
+            // Delay the animation. Delay increases as items loop.
+            animation-delay: $i * (1s);
+          }
+        }
+      }
+
     @include desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
         //display: block;
         margin-left: auto;
-        margin-right: auto;
-        width: 60vw;
+        margin-right: 12vw;
+        width: 30vw;
         font-size: 2rem;
 
         li {

@@ -20,33 +20,18 @@ export default {
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active carouselOver">
-            <div class="adDesc">
-                <p>{{block.imageDesc1}}</p>
-            </div>
             <img class="d-block w-100" :src='"/images/" + block.image1' alt="First slide">
           </div>
           <div class="carousel-item carouselOver">
-            <div class="adDesc">
-                <p>{{block.imageDesc2}}</p>
-            </div>
             <img class="d-block w-100" :src='"/images/" + block.image2' alt="Second slide">
           </div>
           <div class="carousel-item carouselOver">
-            <div class="adDesc">
-                <p>{{block.imageDesc3}}</p>
-            </div>
             <img class="d-block w-100" :src='"/images/" + block.image3' alt="Third slide">
           </div>
           <div class="carousel-item carouselOver">
-            <div class="adDesc">
-                <p>{{block.imageDesc4}}</p>
-            </div>
             <img class="d-block w-100" :src='"/images/" + block.image4' alt="Fourth slide">
           </div>
           <div class="carousel-item carouselOver">
-            <div class="adDesc">
-                <p>{{block.imageDesc5}}</p>
-            </div>
             <img class="d-block w-100" :src='"/images/" + block.image5' alt="Fifth slide">
           </div>
 
