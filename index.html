@@ -106,19 +106,24 @@
         
         <!-- petition -->
         <div id="petition">
-            <div id="petitionHeader">                
-                <h2>Join The Game</h2>
-                <p>Simply sign your name to help raise awareness of the match againt bully in Hockey, and find your name in the petitions</p>
+            <div v-if="showForm">
+                <div id="petitionHeader">                
+                    <h2>Join The Game</h2>
+                    <p>Simply sign your name to help raise awareness of the match againt bully in Hockey, and find your name in the petitions</p>
+                </div>
+                <div id="petitionForm">
+                    <form>
+                        <div>
+                            <input type="text" v-model="name" placeholder="Enter Your Name">
+                            <p>Will</p>
+                        </div>
+                        <p>Win The Game</p>
+                        <button @click="formSubmitted">Submit</button>
+                    </form>
+                </div>
             </div>
-            <div id="petitionForm">
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Enter Your Name">
-                        <p>Will</p>
-                    </div>
-                    <p>Win The Game</p>
-                    <button>Submit</button>
-                </form>
+            <div v-if="submitted">
+                <p>{{ name }}, thank you for signing the petition. Let's win together. </p>
             </div>
         </div>
         <div class="text-loop-scroll">
@@ -214,9 +219,9 @@
             <h2>Resources</h2>
             <p>In efforts to bring a communal answer to these questions, WinTheMatch’s main objective is to stop</p>
             <div>
-                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
-                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
-                <img src="https://via.placeholder.com/200x200?text=resources" alt="">
+                <a href="https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Safety/Safety-Program/Downloads/discipline-and-complaints-policy-e.pdf"><img src="images/hockey_canada.jpg" alt="hocket canada logo"><p>Hockey Canada Discipline & Complaints Policy</p></a>
+                <a href="https://www.prevnet.ca/resources/teaching-resources-to-prevent-identity-based-bullying"><img src="images/prevnet.png" alt="Prev Net logo"><p>Teaching Resources to Prevent Identity-Based Bullying</p></a>
+                <a href="https://www.ofsaa.on.ca/osn-launches-the-officials-program-no-ref-no-game/"><img src="images/noref.jpg" alt="No Ref No Game logo"><p>No Ref, No Game</p></a>
             </div>
         </div>
     </main>
