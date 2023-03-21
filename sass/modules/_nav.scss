@@ -78,23 +78,6 @@
         transition: opacity 2s ease-in 2s;
     }
 
-    .social-icons {
-        background-color: black;
-        padding: 40px;
-        color: white;
-
-        p {
-            font-size: .8em;
-        }
-
-        i {
-            color: white;
-            font-size: 1.4em;
-            margin-right: 15px;
-            margin-bottom: 20px;
-        }
-    }
-
 
 
     @include desktop {
@@ -127,10 +110,6 @@
             &:active {
                 opacity: 0.6;
             }
-        }
-
-        .social-icons {
-            padding: 20px 40px;
         }
     }
 }
