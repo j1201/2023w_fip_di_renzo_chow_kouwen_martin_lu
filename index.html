@@ -204,7 +204,7 @@
                 <campcom v-for="block in campaignData" :block="block"></campcom>
 
     
-                <div class="campaignBlock" id="minidoc">
+                <!-- <div class="campaignBlock" id="minidoc">
                     <div class="campaignContain" @click="openVideo">
                         <div class="campaignHeading">
                             <h3>WinTheMatch Mini Documentary</h3>
@@ -214,15 +214,18 @@
                     <div class="collapse">
                         <iframe style="width: 100%; height: 45vw;" src="https://www.youtube.com/embed/oRpYZDHpvuc" title="Atmospheric Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </div>
+                </div> -->
                 <div class="campaignBlock" id="minidoc">
                     <div class="campaignContain" @click="openVideo">
+                        <div class="campaBG">
+                        </div>
                         <div class="campaignHeading">
                             <h3>WinTheMatch Mini Documentary</h3>
                             <p>A mini documentary for the insight and first hand accounts</p>
                         </div>
-                        <div class="campaBG">
-                        </div>
+                    </div>
+                    <div class="collapse">
+                        <iframe style="width: 100%; height: 45vw;" src="https://www.youtube.com/embed/oRpYZDHpvuc" title="Atmospheric Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             
