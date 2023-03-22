@@ -4,7 +4,8 @@ export default {
 
     template: `
     <div class="campaignBlock" :id='"camp"+block.id'>
-    <div class="campaignContain" @click="openCarousalCom" :style="'background-image: url(/images/' + block.campBG + ')'">
+    <!-- <div class="campaignContain" @click="openCarousalCom" :style="'background-image: url(/images/' + block.campBG + ')'"> -->
+    <div class="campaignContain" @click="openCarousalCom">
         <div class="campaignHeading">
         <h3>{{block.name}}</h3>
             <p>{{block.desc}}</p>
