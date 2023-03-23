@@ -1,75 +1,89 @@
 #campaign {
-    // //margin-top: 10em;
     color: $main-grey;
-    // background-color: $main-black;
 
-    // .campaignBlock {
-    //     background-color: $second-blue;
-    //     cursor: pointer;
-    //     .campaignContain {
-    //         transition: all 0.5s ease;
-    //         .campaignHeading {
-    //             padding:50px 30px;
-    //             transition: all 0.5s ease;
-    //             h3 {
-    //                 font-size: 3em;
-    //                 font-family: "BienSemiBold";
-    //                 margin-bottom: 10px;
-    //             }
-    //         }
-    //     }
-
-    //     .collapse {
-    //         display: none;
-    //         animation: expandIn 0.6s forwards ease;
-    //     }
-
-        #carouselExampleIndicators {
-            background-color: $main-black;
+    .campaignBlock {
+        background-color: $second-blue;
+        cursor: pointer;
+        .campaignContain {
+            transition: all 0.5s ease;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 280px;
+            overflow: hidden;
+            //column-gap: 20px;
+            .campaignHeading {
+                transition: all 0.5s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-align: left;
+                font-family: "BienLight";
+                font-size: 1rem;
+                
+                h3 {
+                    font-size: 2rem;
+                    font-family: "BienSemiBold";
+                    margin-bottom: 0.5rem;
+                }
+            }
+            .campaBG {
+                background-image: url(/images/campaign.png);
+                background-position: center 20%;
+            }
         }
 
+        .collapse {
+            display: none;
+            animation: expandIn 0.6s forwards ease;
+        }
 
-    //     &:hover {
-    //         & > div {
-    //             background-size: 52%;
-    //             .campaignHeading {
-    //                 margin-left: 30%;
-    //             }
-    //         }
-    //     }
-    // }
+        .carousel-inner {
+            background-color: $main-black;
+        }
+    }
 
-    // .campaignBlock:nth-child(even) {
-    //         background-color: $main-red;
+    .campaignBlock:nth-child(even) {
+        background-color: $main-red;
+        .campaignContain {
+            background-size: 60%;
+            background-position: 100% 20%;
+            grid-template-columns: 2fr 1fr;
+            .campaignHeading {
+                //margin-left: 50px;
+                text-align: right;
+                grid-column: 1 / span 1;
+                grid-row: 1/ span 1;
+            }
+            .campaBG {
+                grid-column: 2 / span 1;
+                grid-row: inherit;
 
-    //     &:hover {
-    //         & > div {
-    //             background-size: 52%;
-    //             .campaignHeading {
-    //                 margin-left: 100px;
-    //             }
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 
-    // .campaignOpen {
-    //     .campaignContain{
-    //         background-image: none !important;
-    //         .campaignHeading {
-    //             margin-left: 0 !important;
-    //             padding-left: 50px;
-    //         }
-    //     }
-    //     .collapse {
-    //         display: block;
-    //     }
+    .campaignOpen.campaignBlock {
+        .campaignContain {
+            grid-template-columns: 0fr 1fr;
+        }
 
-    // }
+        .collapse {
+            display: block;
+        }
+
+    }
+    .campaignOpen.campaignBlock:nth-child(even)  {
+        .campaignContain {
+            grid-template-columns: 1fr 0fr;
+        }
+    }
 
 
     .carouselOver {
         img {
-            width: 40% !important;
+            width: 50% !important;
             margin-right: auto;
             margin-left: auto;
         }
@@ -87,51 +101,27 @@
         }
     }
 
+
+
+
+
     @include desktop {
         margin-top: 1rem;
 
         .campaignBlock {
-            background-color: $second-blue;
-            cursor: pointer;
             .campaignContain {
-                transition: all 0.5s ease;
                 display: grid;
                 grid-template-columns: 5fr 6fr;
+                grid-template-rows: 1fr;
                 height: 280px;
                 overflow: hidden;
                 //column-gap: 20px;
                 .campaignHeading {
-                    //padding:50px 0  ;
-                    //width: 65%;
-                    //margin-left: 28%;
-                    transition: all 0.5s ease;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    text-align: left;
-                    
                     h3 {
                         font-size: 3em;
-                        font-family: "BienSemiBold";
                     }
                 }
-                .campaBG {
-                    background-image: url(/images/campaign.png);
-                    background-position: center 20%;
-                }
             }
-
-            .collapse {
-                display: none;
-                animation: expandIn 0.6s forwards ease;
-            }
-
-            #carouselExampleIndicators {
-                background-color: $main-black;
-            }
-
 
             &:hover {
                 div {
@@ -141,22 +131,9 @@
         }
 
         .campaignBlock:nth-child(even) {
-            background-color: $main-red;
             .campaignContain {
-                background-size: 60%;
-                background-position: 100% 20%;
                 grid-template-columns: 6fr 5fr;
-                .campaignHeading {
-                    //margin-left: 50px;
-                    text-align: right;
-                    grid-column: 1 / span 1;
-                    grid-row: 1/ span 1;
-                }
-                .campaBG {
-                    grid-column: 2 / span 1;
-                    grid-row: inherit;
 
-                }
             }
 
             &:hover {
@@ -176,27 +153,12 @@
             }
 
         }
-
-
-        .carouselOver {
-            img {
-                width: 40%;
-                margin-right: auto;
-                margin-left: auto;
-            }
-
-            .adDesc {
-                padding:30px 50px;
-                //background-color: $second-blue;
-                p {
-                    font-size: 1.5rem;
-                    font-family: "BienReg";
-                    text-align: end;
-                    border-top: 0.5px $main-grey solid;
-                    padding-top: 20px;
-                }
+        .campaignOpen.campaignBlock:nth-child(even)  {
+            .campaignContain {
+                grid-template-columns: 1fr 0fr;
             }
         }
+
     }
 }
 

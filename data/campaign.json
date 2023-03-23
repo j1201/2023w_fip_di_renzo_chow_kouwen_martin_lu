@@ -1,35 +1,25 @@
 {
     "Campaign1": {
         "id": "1",
-        "name": "WinTheMatch Series",
+        "name": "Print Series",
         "desc": "Deploy series of display print ads to bring strong awareness to the topic",
         "image1": "print1.jpg",
         "image2": "print2.jpg",
         "image3": "print3.jpg",
         "image4": "print4.jpg",
         "image5": "print5.jpg",
-        "imageDesc1": "this is the first image",
-        "imageDesc2": "this is the second image",
-        "imageDesc3": "this is the third image",
-        "imageDesc4": "this is the fourth image",
-        "imageDesc5": "this is the fifth image",
-        "campBG": "campaign.png"
+        "campBG": "printThumb.jpg"
 
     },
     "Campaign2": {
         "id": "2",
-        "name": "Social Media",
-        "desc": "YO YO Yo This is awesome",
-        "image1": "pirnt1.jpg",
-        "image2": "pirnt1.jpg",
-        "image3": "pirnt1.jpg",
-        "image4": "pirnt1.jpg",
-        "image5": "pirnt1.jpg",
-        "imageDesc1": "this is the first image",
-        "imageDesc2": "this is the first image",
-        "imageDesc3": "this is the first image",
-        "imageDesc4": "this is the first image",
-        "imageDesc5": "this is the first image",
-        "campBG": "social.png"
+        "name": "Social Media Campaign",
+        "desc": "Strategic online marketing to core audience",
+        "image1": "FacebookMockup.jpg",
+        "image2": "Instagram.jpg",
+        "image3": "print3.jpg",
+        "image4": "print4.jpg",
+        "image5": "print5.jpg",
+        "campBG": "socialThumb.jpg"
     }
 }
