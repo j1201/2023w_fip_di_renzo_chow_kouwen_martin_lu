@@ -13,6 +13,18 @@
     },
     "Campaign2": {
         "id": "2",
+        "name": "Print Applications",
+        "desc": "Deploy series of display print ads to bring strong awareness to the topic",
+        "image1": "BigCityBillboardMockup.jpg",
+        "image2": "StoreMockup.jpg",
+        "image3": "BusMockup.jpg",
+        "image4": "MetroBillboardMockup.jpg",
+        "image5": "Jumbotron-Mockup.jpg",
+        "campBG": "appThumb.jpg"
+
+    },
+    "Campaign3": {
+        "id": "3",
         "name": "Social Media Campaign",
         "desc": "Strategic online marketing to core audience",
         "image1": "FacebookMockup.jpg",

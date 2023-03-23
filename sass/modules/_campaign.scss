@@ -30,7 +30,9 @@
             }
             .campaBG {
                 background-image: url(/images/campaign.png);
-                background-position: center 20%;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
             }
         }
 
@@ -83,9 +85,10 @@
 
     .carouselOver {
         img {
-            width: 50% !important;
+            max-height: 90vh !important;
             margin-right: auto;
             margin-left: auto;
+            object-fit: contain;
         }
 
         .adDesc {
@@ -119,6 +122,12 @@
                 .campaignHeading {
                     h3 {
                         font-size: 3em;
+                    }
+                    .campaBG {
+                        background-image: url(/images/campaign.png);
+                        background-position: center center;
+                        background-size: 110%;
+                        background-repeat: no-repeat;
                     }
                 }
             }
