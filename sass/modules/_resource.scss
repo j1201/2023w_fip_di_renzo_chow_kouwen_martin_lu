@@ -1,5 +1,6 @@
 #resources {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
+    margin-top:5rem;
     div {
         display: flex;
         justify-content: space-between;
@@ -9,8 +10,12 @@
             display: flex;
             flex-direction: column;
             //justify-content: space-between;
+            background-color:white;
 
-            
+            img {
+                height: 10rem;
+                object-fit: contain;
+            }
 
             &:hover {
                 text-decoration: none;
@@ -28,6 +33,17 @@
                 padding: 1.5rem;
                 transition: all 0.3s ease;
 
+            }
+        }
+    }
+
+    @include desktop {
+        margin-top: 10rem;
+        div {
+            a {
+                img {
+                    height: 15rem;
+                }
             }
         }
     }

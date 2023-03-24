@@ -35,7 +35,9 @@ import TheCampaignComponent from "./components/CampaignCom.js";
                 console.error(error);
             });
 
-            fetch('http://localhost:8000/petitioners')
+            //fetch('http://localhost:8000/petitioners')
+            fetch('./data/data.json')
+
                 .then(res => res.json()) 
                 .then(data => this.petitionDataNew = data) 
             .catch(error => {
