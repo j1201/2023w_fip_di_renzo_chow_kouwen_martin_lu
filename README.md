@@ -23,8 +23,11 @@ Provides visitors with information and resources to combat bullying in sports.
 ## Built With
 
 HTML
+
 SCSS
+
 Vue
+
 PHP
 
 ## Contributors/Teams
