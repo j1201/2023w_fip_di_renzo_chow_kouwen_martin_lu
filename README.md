@@ -28,9 +28,13 @@ PHP
 ## Contributors/Teams
 
 🎨 Graphic Design - Gonzalo Martin
+
 🎬 Video Design - Abram Kouwen
+
 🪄 Marketing/Campaign - Hannah Di Renzo
+
 💻 Full Stack Development - Hei Yan Chow
+
 🎯 Project Management - Zeyin Lu
 
 ## License
