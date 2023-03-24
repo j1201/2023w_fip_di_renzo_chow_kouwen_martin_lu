@@ -6,7 +6,7 @@ export default {
     <div class="manoItem" :id='"para"+para.id'>
         <h3>{{para.thesis}}</h3>
         <article class="manoExt">{{para.parag}}</article>
-        <div class="readmoreCtn" @click="expandBox">
+        <div class="readmoreCtn" @click="hitthisshit">
             <p>Read More</p>
             <i class="fa-solid fa-chevron-down"></i>
         </div>
@@ -14,11 +14,10 @@ export default {
     `,
 
     methods: {
-        expandBox() {
-            let id = "#para" + this.para.id + ' article';
-            let arrow = document.querySelector("#para" + this.para.id + ' .fa-chevron-down');
-            document.querySelector(id).classList.toggle('expandIn');
-            arrow.classList.toggle('rotate');
+        hitthisshit() {
+            let id = "#para" + this.para.id + ' article'
+            //console.log(id)
+            let me = document.querySelector(id).classList.toggle('expandIn')
         }
     }
 
