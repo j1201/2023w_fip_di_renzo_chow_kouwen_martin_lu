@@ -38,11 +38,6 @@
             </div>
     </header>
 
-    <!-- Hero Section -->
-    <!-- <section id="heroSec" class="hidden">
-        <h2 class="hidden"></h2>
-    </section> -->
-
     <div id="heroVideo">
         <video src="/video/title_update.mp4" autoplay="1" playsinline muted></video>
         <div id="heroButt">
@@ -67,30 +62,6 @@
     <section id="storySecMain">
         <div class="story-text" id="showMenu">
             <h2>Manifesto</h2>
-            <!-- <div class="manoItem">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
-                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
-                <div class="readmoreCtn">
-                    <p>Read More</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="manoItem">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
-                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
-                <div class="readmoreCtn">
-                    <p>Read More</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="manoItem">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam</h3>
-                <article class="manoExt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci reprehenderit accusamus ab. Iste a consequuntur aliquid magnam praesentium saepe optio rem harum suscipit illo qui sed, ipsa odio nihil?Lorem, ipsum dolor sit amet consectetur</article>
-                <div class="readmoreCtn">
-                    <p>Read More</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div> -->
             <manip v-for="para in maniPara" :para="para"></manip>
 
             <div id="manoStat">
@@ -135,86 +106,11 @@
             <li v-for="name in petitionDataNew" :name="name">{{ name.petitioner }}</li>
         </div>
 
-
-
-
         <div id="campaign" class="story-text">
             <h2>Campaigns</h2>
             <div>
-                <!-- print ad -->
-                <!-- <div class="campaignBlock" id="winpirnt">
-                    <div class="campaignContain" @click="openCarousal">
-                        <div class="campaignHeading">
-                            <h3>WinTheMatch Series</h3>
-                            <p>Deploy series of display print ads to bring strong awareness to the topic</p>
-                        </div>
-                    </div>
-                    <div id="carouselExampleIndicators" class="carousel collapse slide " data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active carouselOver">
-                            <div class="adDesc">
-                                <p >This is where the text goes</p>
-                            </div>
-                            <img class="d-block w-100" src="/images/print1.jpg" alt="First slide">
-                          </div>
-                          <div class="carousel-item carouselOver">
-                            <div class="adDesc">
-                                <p >This is where the text goes</p>
-                            </div>
-                            <img class="d-block w-100" src="/images/print2.jpg" alt="Second slide">
-                          </div>
-                          <div class="carousel-item carouselOver">
-                            <div class="adDesc">
-                                <p >This is where the text goes</p>
-                            </div>
-                            <img class="d-block w-100" src="/images/print3.jpg" alt="Third slide">
-                          </div>
-                          <div class="carousel-item carouselOver">
-                            <div class="adDesc">
-                                <p >This is where the text goes</p>
-                            </div>
-                            <img class="d-block w-100" src="/images/print4.jpg" alt="Fourth slide">
-                          </div>
-                          <div class="carousel-item carouselOver">
-                            <div class="adDesc">
-                                <p >This is where the text goes</p>
-                            </div>
-                            <img class="d-block w-100" src="/images/print5.jpg" alt="Fifth slide">
-                          </div>
-        
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div> -->
-
                 <campcom v-for="block in campaignData" :block="block"></campcom>
 
-    
-                <!-- <div class="campaignBlock" id="minidoc">
-                    <div class="campaignContain" @click="openVideo">
-                        <div class="campaignHeading">
-                            <h3>WinTheMatch Mini Documentary</h3>
-                            <p>A mini documentary for the insight and first hand accounts</p>
-                        </div>
-                    </div>
-                    <div class="collapse">
-                        <iframe style="width: 100%; height: 45vw;" src="https://www.youtube.com/embed/oRpYZDHpvuc" title="Atmospheric Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div> -->
                 <div class="campaignBlock" id="minidoc">
                     <div class="campaignContain" @click="openVideo">
                         <div class="campaBG" style="background-image: url(/images/minidoc.png)"></div>
@@ -242,43 +138,6 @@
             </div>
         </div>
     </main>
-
-
-
-  
-
-    <!-- Manifesto 
-    <div class="manifesto" href="#showMenu">
-        <h2>Manifesto</h2>
-        <div>
-            <p>Statement 1</p>
-            <button>Read More <i class="fa-solid fa-chevron-down"></i></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorum iusto in excepturi earum unde beatae ut, odit quaerat pariatur officiis necessitatibus modi ipsum quibusdam aliquid eligendi sunt dolor deleniti.</p>
-        </div>
-        <div>
-            <p>Statement 2</p>
-            <button>Read More <i class="fa-solid fa-chevron-down"></i></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorum iusto in excepturi earum unde beatae ut, odit quaerat pariatur officiis necessitatibus modi ipsum quibusdam aliquid eligendi sunt dolor deleniti.</p>
-        </div>
-        <div>
-            <p>Statement 3</p>
-            <button>Read More <i class="fa-solid fa-chevron-down"></i></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorum iusto in excepturi earum unde beatae ut, odit quaerat pariatur officiis necessitatibus modi ipsum quibusdam aliquid eligendi sunt dolor deleniti.</p>
-        </div>
-        
-        <div>
-            <div><p><span>two in ten</span>households have a child that plays hockey across the country</p></div>
-        </div>
-        <div>
-            <div><p><span>60%</span> of the population believe that the sport contains sexist, racist, and abuse issues</p></div>
-        </div>
-    </div>
-
-    -->
-
-    
-
-
 
 </main>
 <footer>
