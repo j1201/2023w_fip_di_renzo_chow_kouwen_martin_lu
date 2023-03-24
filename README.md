@@ -1,5 +1,7 @@
 # Win The Game - Anti-Bullying in Hockey Promotional Website
 
+![campaign banner](images/readme_banner.png)
+
 ## Introduction
 
 This is a single-page website designed to raise awareness about the issue of bullying in sports, with a focus on hockey in Canada. The website is designed to guide visitors through a storytelling journey, with a vertical format and cohesive design.
