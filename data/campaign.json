@@ -2,7 +2,7 @@
     "Campaign1": {
         "id": "1",
         "name": "Print Series",
-        "desc": "Deploy series of display print ads to bring strong awareness to the topic",
+        "desc": "Deploy series of display print ads to bring strong awareness",
         "image1": "print1.jpg",
         "image2": "print2.jpg",
         "image3": "print3.jpg",
@@ -14,7 +14,7 @@
     "Campaign2": {
         "id": "2",
         "name": "Print Applications",
-        "desc": "Deploy series of display print ads to bring strong awareness to the topic",
+        "desc": "Deploy series of display print ads to bring strong awareness",
         "image1": "BigCityBillboardMockup.jpg",
         "image2": "StoreMockup.jpg",
         "image3": "BusMockup.jpg",
