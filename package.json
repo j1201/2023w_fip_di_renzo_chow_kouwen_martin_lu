@@ -1,0 +1,19 @@
+{
+  "name": "2023w_fip_di_renzo_chow_kouwen_martin_lu",
+  "version": "0.0.0",
+  "description": "2023W FIP - WinTheGame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j1201/2023w_fip_di_renzo_chow_kouwen_martin_lu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j1201/2023w_fip_di_renzo_chow_kouwen_martin_lu/issues"
+  },
+  "homepage": "https://github.com/j1201/2023w_fip_di_renzo_chow_kouwen_martin_lu"
+}

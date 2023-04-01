@@ -84,13 +84,14 @@
                 <p>Simply sign your name to help raise awareness of the match against bullying in Hockey, and find your name in the petitions</p>
             </div>
             <div id="petitionForm">
-                <form v-if="showForm">
+                <form v-if="showForm" @submit.prevent="submitForm">
                     <div>
-                        <input type="text" v-model="name" placeholder="Enter Your Name">
+                        <input type="text" name="name" v-model="name" placeholder="Enter Your Name">
                         <p>Will</p>
                     </div>
                     <p>Win The Game</p>
-                    <button @click="formSubmitted">Submit</button>
+                    <button type="submit">Submit</button>
+                    <!-- <button @click="formSubmitted" type="submit">Submit</button> -->
                 </form>
                 <div v-if="submitted" class="formSub">
                     <p>{{ name }}, thank you for signing the petition.<br>Let's win together.</p>
@@ -104,7 +105,7 @@
             </div>
         </div>
         <div class="text-loop-scroll">
-            <li v-for="name in petitionDataNew" :name="name">{{ name.petitioner }}</li>
+                <li v-for="petitioner in petitionDataNew" :key="petitioner.id">{{petitioner.name}}</li>
         </div>
 
 
