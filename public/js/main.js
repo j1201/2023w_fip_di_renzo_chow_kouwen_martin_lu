@@ -104,7 +104,7 @@ import TheCampaignComponent from "./components/CampaignCom.js";
             },
             
             submitForm() {
-                fetch('http://localhost:8000/index.php/petitioners/create', {
+                fetch('http://localhost:8000/petitioners', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
